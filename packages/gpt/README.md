@@ -1,4 +1,4 @@
-# ChatGPT GPT-5 Thinking
+# ChatGPT GPT-5
 
 🤖 **AI Model**: ChatGPT với GPT-5 Thinking capabilities
 
