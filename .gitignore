@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.staging
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Reports
+metrics-reports/
+test-reports/
+coverage/
+plato-reports/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Build outputs (if any)
+dist/
+build/
+out/
+
+# Cache
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock

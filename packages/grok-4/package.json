@@ -1,0 +1,20 @@
+{
+  "name": "@hust-sqa/grok-4",
+  "version": "1.0.0",
+  "description": "Library management system implementation using Grok-4",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "library-management",
+    "grok",
+    "grok-4",
+    "book-management"
+  ],
+  "author": "hieple",
+  "license": "ISC"
+}

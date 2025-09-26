@@ -1,0 +1,20 @@
+{
+  "name": "@hust-sqa/google-gemini-2.5-pro",
+  "version": "1.0.0",
+  "description": "Library management system implementation using Google Gemini 2.5 Pro",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "library-management",
+    "gemini",
+    "google-gemini-2.5-pro",
+    "book-management"
+  ],
+  "author": "hieple",
+  "license": "ISC"
+}

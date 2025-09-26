@@ -1,0 +1,20 @@
+{
+  "name": "@hust-sqa/claude-sonnet-4",
+  "version": "1.0.0",
+  "description": "Library management system implementation using Claude Sonnet 4",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "library-management",
+    "claude",
+    "sonnet-4",
+    "book-management"
+  ],
+  "author": "hieple",
+  "license": "ISC"
+}

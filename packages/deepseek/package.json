@@ -1,0 +1,19 @@
+{
+  "name": "@hust-sqa/deepseek",
+  "version": "1.0.0",
+  "description": "Library management system implementation using DeepSeek",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "library-management",
+    "deepseek",
+    "book-management"
+  ],
+  "author": "hieple",
+  "license": "ISC"
+}

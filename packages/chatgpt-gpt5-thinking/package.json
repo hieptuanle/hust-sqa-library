@@ -1,0 +1,20 @@
+{
+  "name": "@hust-sqa/chatgpt-gpt5-thinking",
+  "version": "1.0.0",
+  "description": "Library management system implementation using ChatGPT GPT-5 Thinking",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "library-management",
+    "chatgpt",
+    "gpt-5-thinking",
+    "book-management"
+  ],
+  "author": "hieple",
+  "license": "ISC"
+}
