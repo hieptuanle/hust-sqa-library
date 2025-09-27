@@ -1,0 +1,103 @@
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#add-book-form, #search-container, #auth-container > div {
+    margin-bottom: 20px;
+}
+
+#book-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#book-list th, #book-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#book-list th {
+    background-color: #f2f2f2;
+}
+
+#book-list button {
+    background-color: #d9534f;
+}
+
+#book-list button:hover {
+    background-color: #c9302c;
+}
+
+#user-session {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#user-session p {
+    margin: 0;
+}
+
+#user-session button {
+    width: auto;
+    padding: 8px 12px;
+    background-color: #f0ad4e;
+}
+
+#user-session button:hover {
+    background-color: #eea236;
+}
+
+a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
