@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Library Book Manager</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="auth-panel" id="authSection">
+      <h1>Library Book Manager</h1>
+      <div class="auth-toggle">
+        <button type="button" data-auth-mode="login" class="active">Login</button>
+        <button type="button" data-auth-mode="register">Register</button>
+      </div>
+      <form id="authForm" novalidate>
+        <label>
+          Username
+          <input type="text" name="username" autocomplete="username" required />
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" autocomplete="current-password" required />
+        </label>
+        <button type="submit">Login</button>
+        <p class="form-feedback" id="authFeedback"></p>
+      </form>
+    </section>
+
+    <section class="app-panel hidden" id="appSection">
+      <header class="app-header">
+        <div>
+          <h2>Library Collection</h2>
+          <p id="welcomeMessage"></p>
+        </div>
+        <button type="button" id="logoutButton">Logout</button>
+      </header>
+
+      <section class="card">
+        <h3>Add a Book</h3>
+        <form id="addBookForm" novalidate>
+          <div class="form-grid">
+            <label>
+              Title
+              <input type="text" name="title" placeholder="e.g. Clean Code" required />
+            </label>
+            <label>
+              Author
+              <input type="text" name="author" placeholder="e.g. Robert C. Martin" required />
+            </label>
+            <label>
+              Publication Year
+              <input type="number" name="year" min="1400" max="3000" placeholder="e.g. 2008" required />
+            </label>
+          </div>
+          <button type="submit">Add Book</button>
+          <p class="form-feedback" id="bookFeedback"></p>
+        </form>
+      </section>
+
+      <section class="card">
+        <h3>Search Library</h3>
+        <form id="searchForm" class="search-bar">
+          <input type="search" name="query" placeholder="Search books..." />
+          <div class="search-filter">
+            <label><input type="radio" name="field" value="title" checked /> Title</label>
+            <label><input type="radio" name="field" value="author" /> Author</label>
+          </div>
+          <button type="submit">Search</button>
+          <button type="button" id="clearSearch">Clear</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h3>Books</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="booksTableBody">
+              <tr class="empty-row">
+                <td colspan="4">No books in the library yet.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

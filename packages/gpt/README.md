@@ -12,7 +12,9 @@ Xem tại [README.md](../../README.md)
 
 ## Đánh giá sơ bộ
 
-TBD
+### Đầy đủ chức năng
+
+
 
 ---
 
