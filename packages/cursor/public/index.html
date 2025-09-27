@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Book Manager</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        color: white;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      .header p {
+        opacity: 0.9;
+        font-size: 1.1em;
+      }
+
+      .main-content {
+        padding: 30px;
+      }
+
+      .auth-section {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 30px;
+      }
+
+      .auth-section h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+      }
+
+      .auth-forms {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #2c3e50;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #e1e8ed;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+      }
+
+      .form-group input:focus {
+        outline: none;
+        border-color: #667eea;
+      }
+
+      .btn {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+      }
+
+      .btn:active {
+        transform: translateY(0);
+      }
+
+      .btn-danger {
+        background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+      }
+
+      .btn-danger:hover {
+        box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+      }
+
+      .btn-secondary {
+        background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+      }
+
+      .btn-secondary:hover {
+        box-shadow: 0 5px 15px rgba(149, 165, 166, 0.4);
+      }
+
+      .user-info {
+        background: #e8f5e8;
+        border: 2px solid #27ae60;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 30px;
+        display: none;
+      }
+
+      .user-info h3 {
+        color: #27ae60;
+        margin-bottom: 10px;
+      }
+
+      .book-section {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 30px;
+      }
+
+      .book-section h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+      }
+
+      .add-book-form {
+        background: white;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .add-book-form h3 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr auto;
+        gap: 15px;
+        align-items: end;
+      }
+
+      .search-section {
+        background: white;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .search-section h3 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+
+      .search-form {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        gap: 15px;
+        align-items: end;
+      }
+
+      .search-type {
+        display: flex;
+        gap: 10px;
+      }
+
+      .search-type input[type="radio"] {
+        margin-right: 5px;
+      }
+
+      .books-table {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .books-table table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .books-table th,
+      .books-table td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #e1e8ed;
+      }
+
+      .books-table th {
+        background: #f8f9fa;
+        font-weight: 600;
+        color: #2c3e50;
+      }
+
+      .books-table tr:hover {
+        background: #f8f9fa;
+      }
+
+      .message {
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      .message.success {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+      }
+
+      .message.error {
+        background: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .auth-forms {
+          grid-template-columns: 1fr;
+        }
+
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+
+        .search-form {
+          grid-template-columns: 1fr;
+        }
+
+        .books-table {
+          overflow-x: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>📚 Library Book Manager</h1>
+        <p>Manage your library collection with ease</p>
+      </div>
+
+      <div class="main-content">
+        <!-- Authentication Section -->
+        <div class="auth-section">
+          <h2>Authentication</h2>
+          <div class="auth-forms">
+            <!-- Register Form -->
+            <div>
+              <h3>Register</h3>
+              <form id="registerForm">
+                <div class="form-group">
+                  <label for="regUsername">Username:</label>
+                  <input
+                    type="text"
+                    id="regUsername"
+                    name="username"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="regEmail">Email:</label>
+                  <input type="email" id="regEmail" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="regPassword">Password:</label>
+                  <input
+                    type="password"
+                    id="regPassword"
+                    name="password"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn">Register</button>
+              </form>
+            </div>
+
+            <!-- Login Form -->
+            <div>
+              <h3>Login</h3>
+              <form id="loginForm">
+                <div class="form-group">
+                  <label for="loginUsername">Username:</label>
+                  <input
+                    type="text"
+                    id="loginUsername"
+                    name="username"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="loginPassword">Password:</label>
+                  <input
+                    type="password"
+                    id="loginPassword"
+                    name="password"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- User Info -->
+        <div id="userInfo" class="user-info">
+          <h3>Welcome, <span id="userName"></span>!</h3>
+          <p>You are logged in and can add/delete books.</p>
+          <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+        </div>
+
+        <!-- Add Book Section -->
+        <div class="book-section">
+          <h2>Add New Book</h2>
+          <div class="add-book-form">
+            <h3>Book Details</h3>
+            <form id="addBookForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="bookTitle">Title:</label>
+                  <input type="text" id="bookTitle" name="title" required />
+                </div>
+                <div class="form-group">
+                  <label for="bookAuthor">Author:</label>
+                  <input type="text" id="bookAuthor" name="author" required />
+                </div>
+                <div class="form-group">
+                  <label for="bookYear">Publication Year:</label>
+                  <input
+                    type="number"
+                    id="bookYear"
+                    name="publicationYear"
+                    min="1400"
+                    max="2024"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn">Add Book</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+          <h3>Search Books</h3>
+          <form id="searchForm">
+            <div class="search-form">
+              <div class="form-group">
+                <label for="searchQuery">Search Query:</label>
+                <input
+                  type="text"
+                  id="searchQuery"
+                  name="query"
+                  placeholder="Enter title or author..."
+                />
+              </div>
+              <div class="form-group">
+                <label>Search Type:</label>
+                <div class="search-type">
+                  <label
+                    ><input
+                      type="radio"
+                      name="searchType"
+                      value="title"
+                      checked
+                    />
+                    Title</label
+                  >
+                  <label
+                    ><input type="radio" name="searchType" value="author" />
+                    Author</label
+                  >
+                </div>
+              </div>
+              <button type="submit" class="btn">Search</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Books Table -->
+        <div class="books-table">
+          <h3 style="padding: 20px; margin: 0; color: #2c3e50">
+            Library Books
+          </h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Added By</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="booksTableBody">
+              <tr>
+                <td
+                  colspan="5"
+                  style="text-align: center; padding: 40px; color: #7f8c8d"
+                >
+                  Loading books...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
