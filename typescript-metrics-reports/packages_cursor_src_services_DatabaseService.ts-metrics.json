@@ -1,0 +1,59 @@
+{
+  "file": "packages/cursor/src/services/DatabaseService.ts",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/cursor/src/services/DatabaseService.ts",
+  "timestamp": "2025-09-27T10:38:11.527Z",
+  "loc": {
+    "physical": 315,
+    "source": 128,
+    "comments": 187,
+    "blank": 0,
+    "commentDensity": "59.37%"
+  },
+  "complexity": {
+    "cyclomatic": 23,
+    "cyclomaticDensity": "17.97",
+    "functions": [],
+    "averageComplexity": "0.00"
+  },
+  "halstead": {
+    "uniqueOperators": 24,
+    "uniqueOperands": 112,
+    "totalOperators": 267,
+    "totalOperands": 277,
+    "vocabulary": 136,
+    "length": 544,
+    "calculatedLength": "0.00",
+    "volume": "3855.58",
+    "difficulty": "29.68",
+    "effort": "114428.10",
+    "timeRequired": "6357.12 seconds",
+    "bugsDelivered": "1.2850"
+  },
+  "maintainability": {
+    "index": "76.07",
+    "rating": "Moderate",
+    "factors": {
+      "halsteadVolume": 3855.58,
+      "cyclomaticComplexity": 23,
+      "linesOfCode": 315,
+      "commentDensity": 59.36507936507937
+    },
+    "components": {
+      "withoutComment": "29.58",
+      "commentWeight": "46.49"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "26.83",
+    "maxNestingLevel": 5,
+    "todoComments": 0,
+    "imports": 5,
+    "exports": 1,
+    "couplingIndicator": 6,
+    "cohesionIndicator": 5,
+    "interfaces": 0,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 0
+  }
+}

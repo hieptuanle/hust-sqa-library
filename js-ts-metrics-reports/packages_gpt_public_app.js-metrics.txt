@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/gpt/public/app.js
+Analysis Date: 2025-09-27T10:44:32.880Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 248
+Source Lines: 247
+Comment Lines: 1
+Blank Lines: N/A
+Comment Density: 0.40%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 40
+Cyclomatic Density: 16.19
+Average Function Complexity: 1.95
+Number of Functions: 20
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 25
+Unique Operands: 182
+Vocabulary: 207
+Length: 972
+Volume: 7478.07
+Difficulty: 35.37
+Effort: 264505.89
+Time Required: 14694.77 seconds
+Bugs Delivered: 2.4930
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 31.01
+Rating: Difficult to maintain
+MI Without Comments: 26.10
+MI Comment Weight: 4.91
+Comment Density: 0.40%
+
+CODE QUALITY
+------------
+Average Line Length: 29.22
+Max Nesting Level: 4
+TODO Comments: 0
+Imports: 0
+Exports: 0
+Coupling Indicator: N/A
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: N/A
+Types: N/A
+Enums: N/A
+Total Type Definitions: N/A

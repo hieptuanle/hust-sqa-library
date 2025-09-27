@@ -1,0 +1,447 @@
+{
+  "file": "packages/deepseek/src/db.ts",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/deepseek/src/db.ts",
+  "timestamp": "2025-09-27T10:44:32.868Z",
+  "loc": {
+    "physical": 93,
+    "source": 42,
+    "comments": 51,
+    "blank": 0,
+    "commentDensity": "54.84%"
+  },
+  "complexity": {
+    "cyclomatic": 16,
+    "cyclomaticDensity": "38.09",
+    "functions": [
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 16.667,
+        "halstead": {
+          "bugs": 0.025,
+          "difficulty": 3.333,
+          "effort": 247.436,
+          "length": 19,
+          "time": 13.746,
+          "vocabulary": 15,
+          "volume": 74.231,
+          "operands": {
+            "distinct": 9,
+            "total": 10,
+            "identifiers": [
+              "db",
+              "open",
+              "filename",
+              "\"./library.db\"",
+              "driver",
+              "sqlite3",
+              "Database",
+              "exec",
+              "\n    CREATE TABLE IF NOT EXISTS users (\n      id TEXT PRIMARY KEY,\n      username TEXT UNIQUE NOT NULL,\n      password TEXT NOT NULL\n    );\n\n    CREATE TABLE IF NOT EXISTS books (\n      id TEXT PRIMARY KEY,\n      title TEXT NOT NULL,\n      author TEXT NOT NULL,\n      year INTEGER NOT NULL,\n      added_by TEXT NOT NULL,\n      FOREIGN KEY(added_by) REFERENCES users(id)\n    );\n  "
+            ]
+          },
+          "operators": {
+            "distinct": 6,
+            "total": 9,
+            "identifiers": [
+              "=",
+              "()",
+              "{}",
+              ":",
+              ".",
+              "``"
+            ]
+          }
+        },
+        "paramCount": 0,
+        "sloc": {
+          "logical": 6,
+          "physical": 23
+        },
+        "errors": [],
+        "lineEnd": 30,
+        "lineStart": 8,
+        "name": "initializeDB",
+        "paramNames": [],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 3,
+        "cyclomaticDensity": 42.857,
+        "halstead": {
+          "bugs": 0.041,
+          "difficulty": 8.667,
+          "effort": 1065.869,
+          "length": 28,
+          "time": 59.215,
+          "vocabulary": 21,
+          "volume": 122.985,
+          "operands": {
+            "distinct": 9,
+            "total": 13,
+            "identifiers": [
+              "username",
+              "password",
+              "Error",
+              "\"Username and password are required\"",
+              "userId",
+              "uuidv4",
+              "db",
+              "run",
+              "\"INSERT INTO users (id, username, password) VALUES (?, ?, ?)\""
+            ]
+          },
+          "operators": {
+            "distinct": 12,
+            "total": 15,
+            "identifiers": [
+              "if",
+              "||",
+              "! (prefix)",
+              "throw",
+              "new",
+              "const",
+              "=",
+              "()",
+              ".",
+              "[]",
+              ",",
+              "return"
+            ]
+          }
+        },
+        "paramCount": 2,
+        "sloc": {
+          "logical": 7,
+          "physical": 12
+        },
+        "errors": [],
+        "lineEnd": 44,
+        "lineStart": 33,
+        "name": "registerUser",
+        "paramNames": [
+          "username",
+          "password"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 2,
+        "cyclomaticDensity": 66.667,
+        "halstead": {
+          "bugs": 0.023,
+          "difficulty": 4.5,
+          "effort": 306,
+          "length": 17,
+          "time": 17,
+          "vocabulary": 16,
+          "volume": 68,
+          "operands": {
+            "distinct": 8,
+            "total": 9,
+            "identifiers": [
+              "user",
+              "db",
+              "get",
+              "\"SELECT id FROM users WHERE username = ? AND password = ?\"",
+              "username",
+              "password",
+              "id",
+              "null"
+            ]
+          },
+          "operators": {
+            "distinct": 8,
+            "total": 8,
+            "identifiers": [
+              "const",
+              "=",
+              "()",
+              ".",
+              "[]",
+              ",",
+              "return",
+              "||"
+            ]
+          }
+        },
+        "paramCount": 2,
+        "sloc": {
+          "logical": 3,
+          "physical": 7
+        },
+        "errors": [],
+        "lineEnd": 52,
+        "lineStart": 46,
+        "name": "loginUser",
+        "paramNames": [
+          "username",
+          "password"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 6,
+        "cyclomaticDensity": 54.545,
+        "halstead": {
+          "bugs": 0.091,
+          "difficulty": 10.294,
+          "effort": 2804.949,
+          "length": 55,
+          "time": 155.831,
+          "vocabulary": 31,
+          "volume": 272.481,
+          "operands": {
+            "distinct": 17,
+            "total": 25,
+            "identifiers": [
+              "title",
+              "author",
+              "Error",
+              "\"Title and author are required\"",
+              "Number",
+              "isInteger",
+              "year",
+              "1400",
+              "Date",
+              "getFullYear",
+              "\"Publication year must be between 1400 and current year\"",
+              "bookId",
+              "uuidv4",
+              "db",
+              "run",
+              "\"INSERT INTO books (id, title, author, year, added_by) VALUES (?, ?, ?, ?, ?)\"",
+              "userId"
+            ]
+          },
+          "operators": {
+            "distinct": 14,
+            "total": 30,
+            "identifiers": [
+              "if",
+              "||",
+              "! (prefix)",
+              "throw",
+              "new",
+              "()",
+              ".",
+              "<",
+              ">",
+              "const",
+              "=",
+              "[]",
+              ",",
+              "return"
+            ]
+          }
+        },
+        "paramCount": 4,
+        "sloc": {
+          "logical": 11,
+          "physical": 22
+        },
+        "errors": [],
+        "lineEnd": 76,
+        "lineStart": 55,
+        "name": "addBook",
+        "paramNames": [
+          "userId",
+          "title",
+          "author",
+          "year"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 50,
+        "halstead": {
+          "bugs": 0.007,
+          "difficulty": 1.5,
+          "effort": 29.477,
+          "length": 7,
+          "time": 1.638,
+          "vocabulary": 7,
+          "volume": 19.651,
+          "operands": {
+            "distinct": 4,
+            "total": 4,
+            "identifiers": [
+              "db",
+              "run",
+              "\"DELETE FROM books WHERE id = ?\"",
+              "bookId"
+            ]
+          },
+          "operators": {
+            "distinct": 3,
+            "total": 3,
+            "identifiers": [
+              "()",
+              ".",
+              "[]"
+            ]
+          }
+        },
+        "paramCount": 1,
+        "sloc": {
+          "logical": 2,
+          "physical": 3
+        },
+        "errors": [],
+        "lineEnd": 80,
+        "lineStart": 78,
+        "name": "deleteBook",
+        "paramNames": [
+          "bookId"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 33.333,
+        "halstead": {
+          "bugs": 0.027,
+          "difficulty": 5,
+          "effort": 400,
+          "length": 20,
+          "time": 22.222,
+          "vocabulary": 16,
+          "volume": 80,
+          "operands": {
+            "distinct": 8,
+            "total": 10,
+            "identifiers": [
+              "searchQuery",
+              "query",
+              "%",
+              "db",
+              "all",
+              "by",
+              "SELECT id, title, author, year FROM books WHERE ",
+              " LIKE ?"
+            ]
+          },
+          "operators": {
+            "distinct": 8,
+            "total": 10,
+            "identifiers": [
+              "const",
+              "=",
+              "``",
+              "${}",
+              "return",
+              "()",
+              ".",
+              "[]"
+            ]
+          }
+        },
+        "paramCount": 2,
+        "sloc": {
+          "logical": 3,
+          "physical": 7
+        },
+        "errors": [],
+        "lineEnd": 88,
+        "lineStart": 82,
+        "name": "searchBooks",
+        "paramNames": [
+          "query",
+          "by"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 50,
+        "halstead": {
+          "bugs": 0.005,
+          "difficulty": 1.5,
+          "effort": 23.265,
+          "length": 6,
+          "time": 1.292,
+          "vocabulary": 6,
+          "volume": 15.51,
+          "operands": {
+            "distinct": 3,
+            "total": 3,
+            "identifiers": [
+              "db",
+              "all",
+              "\"SELECT id, title, author, year FROM books\""
+            ]
+          },
+          "operators": {
+            "distinct": 3,
+            "total": 3,
+            "identifiers": [
+              "return",
+              "()",
+              "."
+            ]
+          }
+        },
+        "paramCount": 0,
+        "sloc": {
+          "logical": 2,
+          "physical": 3
+        },
+        "errors": [],
+        "lineEnd": 92,
+        "lineStart": 90,
+        "name": "getAllBooks",
+        "paramNames": [],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      }
+    ],
+    "averageComplexity": "2.14"
+  },
+  "halstead": {
+    "uniqueOperators": 20,
+    "uniqueOperands": 50,
+    "totalOperators": 87,
+    "totalOperands": 94,
+    "vocabulary": 70,
+    "length": 181,
+    "calculatedLength": "0.00",
+    "volume": "1109.40",
+    "difficulty": "18.80",
+    "effort": "20856.72",
+    "timeRequired": "1158.71 seconds",
+    "bugsDelivered": "0.3700"
+  },
+  "maintainability": {
+    "index": "103.01",
+    "rating": "Good",
+    "factors": {
+      "halsteadVolume": 1109.4,
+      "cyclomaticComplexity": 16,
+      "linesOfCode": 93,
+      "commentDensity": 54.83870967741935
+    },
+    "components": {
+      "withoutComment": "57.43",
+      "commentWeight": "45.58"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "23.49",
+    "maxNestingLevel": 2,
+    "todoComments": 0,
+    "imports": 3,
+    "exports": 7,
+    "couplingIndicator": 10,
+    "cohesionIndicator": 2,
+    "interfaces": 0,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 0
+  }
+}

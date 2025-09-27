@@ -1,0 +1,59 @@
+{
+  "file": "packages/claude/src/models/Book.ts",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/claude/src/models/Book.ts",
+  "timestamp": "2025-09-27T10:38:11.501Z",
+  "loc": {
+    "physical": 8,
+    "source": 0,
+    "comments": 8,
+    "blank": 0,
+    "commentDensity": "0.00%"
+  },
+  "complexity": {
+    "cyclomatic": 1,
+    "cyclomaticDensity": "0.00",
+    "functions": [],
+    "averageComplexity": "0.00"
+  },
+  "halstead": {
+    "uniqueOperators": 0,
+    "uniqueOperands": 8,
+    "totalOperators": 0,
+    "totalOperands": 8,
+    "vocabulary": 8,
+    "length": 8,
+    "calculatedLength": "0.00",
+    "volume": "24.00",
+    "difficulty": "0.00",
+    "effort": "0.00",
+    "timeRequired": "0.00 seconds",
+    "bugsDelivered": "0.0080"
+  },
+  "maintainability": {
+    "index": "120.56",
+    "rating": "Good",
+    "factors": {
+      "halsteadVolume": 24,
+      "cyclomaticComplexity": 1,
+      "linesOfCode": 8,
+      "commentDensity": 0
+    },
+    "components": {
+      "withoutComment": "120.56",
+      "commentWeight": "0.00"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "17.13",
+    "maxNestingLevel": 1,
+    "todoComments": 0,
+    "imports": 0,
+    "exports": 1,
+    "couplingIndicator": 1,
+    "cohesionIndicator": 1,
+    "interfaces": 1,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 1
+  }
+}

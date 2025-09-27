@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/cursor/src/index.ts
+Analysis Date: 2025-09-27T10:38:11.512Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 93
+Source Lines: 67
+Comment Lines: 26
+Blank Lines: N/A
+Comment Density: 27.96%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 11
+Cyclomatic Density: 16.42
+Average Function Complexity: 1.11
+Number of Functions: 9
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 13
+Unique Operands: 69
+Vocabulary: 82
+Length: 264
+Volume: 1678.39
+Difficulty: 13.47
+Effort: 22609.67
+Time Required: 1256.09 seconds
+Bugs Delivered: 0.5590
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 92.96
+Rating: Good
+MI Without Comments: 56.43
+MI Comment Weight: 36.53
+Comment Density: 27.96%
+
+CODE QUALITY
+------------
+Average Line Length: 25.24
+Max Nesting Level: 3
+TODO Comments: 0
+Imports: 6
+Exports: 0
+Coupling Indicator: 6
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: N/A
+Types: N/A
+Enums: N/A
+Total Type Definitions: N/A

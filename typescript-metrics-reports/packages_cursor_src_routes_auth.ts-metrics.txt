@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/cursor/src/routes/auth.ts
+Analysis Date: 2025-09-27T10:38:11.519Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 176
+Source Lines: 137
+Comment Lines: 39
+Blank Lines: N/A
+Comment Density: 22.16%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 20
+Cyclomatic Density: 14.60
+Average Function Complexity: 3.80
+Number of Functions: 5
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 17
+Unique Operands: 68
+Vocabulary: 85
+Length: 506
+Volume: 3243.15
+Difficulty: 32.50
+Effort: 105402.43
+Time Required: 5855.69 seconds
+Bugs Delivered: 1.0810
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 73.92
+Rating: Moderate
+MI Without Comments: 40.60
+MI Comment Weight: 33.32
+Comment Density: 22.16%
+
+CODE QUALITY
+------------
+Average Line Length: 26.20
+Max Nesting Level: 5
+TODO Comments: 0
+Imports: 4
+Exports: 1
+Coupling Indicator: 5
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: N/A
+Types: N/A
+Enums: N/A
+Total Type Definitions: N/A

@@ -1,0 +1,59 @@
+{
+  "file": "packages/claude/public/js/app.js",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/claude/public/js/app.js",
+  "timestamp": "2025-09-27T10:44:32.832Z",
+  "loc": {
+    "physical": 270,
+    "source": 253,
+    "comments": 17,
+    "blank": 0,
+    "commentDensity": "6.30%"
+  },
+  "complexity": {
+    "cyclomatic": 46,
+    "cyclomaticDensity": "18.18",
+    "functions": [],
+    "averageComplexity": "0.00"
+  },
+  "halstead": {
+    "uniqueOperators": 22,
+    "uniqueOperands": 153,
+    "totalOperators": 502,
+    "totalOperands": 477,
+    "vocabulary": 175,
+    "length": 979,
+    "calculatedLength": "0.00",
+    "volume": "7294.74",
+    "difficulty": "34.29",
+    "effort": "250166.52",
+    "timeRequired": "13898.14 seconds",
+    "bugsDelivered": "2.4320"
+  },
+  "maintainability": {
+    "index": "42.42",
+    "rating": "Difficult to maintain",
+    "factors": {
+      "halsteadVolume": 7294.736,
+      "cyclomaticComplexity": 46,
+      "linesOfCode": 270,
+      "commentDensity": 6.296296296296296
+    },
+    "components": {
+      "withoutComment": "23.47",
+      "commentWeight": "18.95"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "28.67",
+    "maxNestingLevel": 5,
+    "todoComments": 0,
+    "imports": 0,
+    "exports": 0,
+    "couplingIndicator": 0,
+    "cohesionIndicator": 5,
+    "interfaces": 0,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 0
+  }
+}

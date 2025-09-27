@@ -1,0 +1,59 @@
+{
+  "file": "packages/gpt/src/types.ts",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/gpt/src/types.ts",
+  "timestamp": "2025-09-27T10:38:11.549Z",
+  "loc": {
+    "physical": 23,
+    "source": 0,
+    "comments": 23,
+    "blank": 0,
+    "commentDensity": "0.00%"
+  },
+  "complexity": {
+    "cyclomatic": 1,
+    "cyclomaticDensity": "0.00",
+    "functions": [],
+    "averageComplexity": "0.00"
+  },
+  "halstead": {
+    "uniqueOperators": 0,
+    "uniqueOperands": 14,
+    "totalOperators": 0,
+    "totalOperands": 17,
+    "vocabulary": 14,
+    "length": 17,
+    "calculatedLength": "0.00",
+    "volume": "64.72",
+    "difficulty": "0.00",
+    "effort": "0.00",
+    "timeRequired": "0.00 seconds",
+    "bugsDelivered": "0.0220"
+  },
+  "maintainability": {
+    "index": "98.29",
+    "rating": "Good",
+    "factors": {
+      "halsteadVolume": 64.725,
+      "cyclomaticComplexity": 1,
+      "linesOfCode": 23,
+      "commentDensity": 0
+    },
+    "components": {
+      "withoutComment": "98.29",
+      "commentWeight": "0.00"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "14.52",
+    "maxNestingLevel": 1,
+    "todoComments": 0,
+    "imports": 0,
+    "exports": 3,
+    "couplingIndicator": 3,
+    "cohesionIndicator": 1,
+    "interfaces": 3,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 3
+  }
+}

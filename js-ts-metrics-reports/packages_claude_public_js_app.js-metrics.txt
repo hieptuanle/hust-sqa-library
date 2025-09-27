@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/claude/public/js/app.js
+Analysis Date: 2025-09-27T10:44:32.832Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 270
+Source Lines: 253
+Comment Lines: 17
+Blank Lines: N/A
+Comment Density: 6.30%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 46
+Cyclomatic Density: 18.18
+Average Function Complexity: 0.00
+Number of Functions: 0
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 22
+Unique Operands: 153
+Vocabulary: 175
+Length: 979
+Volume: 7294.74
+Difficulty: 34.29
+Effort: 250166.52
+Time Required: 13898.14 seconds
+Bugs Delivered: 2.4320
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 42.42
+Rating: Difficult to maintain
+MI Without Comments: 23.47
+MI Comment Weight: 18.95
+Comment Density: 6.30%
+
+CODE QUALITY
+------------
+Average Line Length: 28.67
+Max Nesting Level: 5
+TODO Comments: 0
+Imports: 0
+Exports: 0
+Coupling Indicator: N/A
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: N/A
+Types: N/A
+Enums: N/A
+Total Type Definitions: N/A

@@ -1,0 +1,163 @@
+{
+  "file": "packages/claude/src/db/database.ts",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/claude/src/db/database.ts",
+  "timestamp": "2025-09-27T10:44:32.834Z",
+  "loc": {
+    "physical": 51,
+    "source": 22,
+    "comments": 29,
+    "blank": 0,
+    "commentDensity": "56.86%"
+  },
+  "complexity": {
+    "cyclomatic": 4,
+    "cyclomaticDensity": "18.18",
+    "functions": [
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 8.333,
+        "halstead": {
+          "bugs": 0.056,
+          "difficulty": 5,
+          "effort": 834.54,
+          "length": 38,
+          "time": 46.363,
+          "vocabulary": 21,
+          "volume": 166.908,
+          "operands": {
+            "distinct": 14,
+            "total": 20,
+            "identifiers": [
+              "db",
+              "open",
+              "filename",
+              "path",
+              "join",
+              "__dirname",
+              "\"../../library.db\"",
+              "driver",
+              "sqlite3",
+              "Database",
+              "exec",
+              "\n    CREATE TABLE IF NOT EXISTS users (\n      id INTEGER PRIMARY KEY AUTOINCREMENT,\n      username TEXT UNIQUE NOT NULL,\n      password TEXT NOT NULL,\n      created_at DATETIME DEFAULT CURRENT_TIMESTAMP\n    )\n  ",
+              "\n    CREATE TABLE IF NOT EXISTS books (\n      id TEXT PRIMARY KEY,\n      title TEXT NOT NULL,\n      author TEXT NOT NULL,\n      publication_year INTEGER NOT NULL,\n      added_by INTEGER,\n      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,\n      FOREIGN KEY (added_by) REFERENCES users(id)\n    )\n  ",
+              "\n    CREATE INDEX IF NOT EXISTS idx_books_title ON books(title);\n    CREATE INDEX IF NOT EXISTS idx_books_author ON books(author);\n  "
+            ]
+          },
+          "operators": {
+            "distinct": 7,
+            "total": 18,
+            "identifiers": [
+              "=",
+              "()",
+              "{}",
+              ":",
+              ".",
+              "``",
+              "return"
+            ]
+          }
+        },
+        "paramCount": 0,
+        "sloc": {
+          "logical": 12,
+          "physical": 34
+        },
+        "errors": [],
+        "lineEnd": 44,
+        "lineStart": 11,
+        "name": "initDatabase",
+        "paramNames": [],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 2,
+        "cyclomaticDensity": 66.667,
+        "halstead": {
+          "bugs": 0.009,
+          "difficulty": 3.333,
+          "effort": 90,
+          "length": 9,
+          "time": 5,
+          "vocabulary": 8,
+          "volume": 27,
+          "operands": {
+            "distinct": 3,
+            "total": 4,
+            "identifiers": [
+              "db",
+              "Error",
+              "\"Database not initialized\""
+            ]
+          },
+          "operators": {
+            "distinct": 5,
+            "total": 5,
+            "identifiers": [
+              "if",
+              "! (prefix)",
+              "throw",
+              "new",
+              "return"
+            ]
+          }
+        },
+        "paramCount": 0,
+        "sloc": {
+          "logical": 3,
+          "physical": 6
+        },
+        "errors": [],
+        "lineEnd": 51,
+        "lineStart": 46,
+        "name": "getDb",
+        "paramNames": [],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      }
+    ],
+    "averageComplexity": "1.50"
+  },
+  "halstead": {
+    "uniqueOperators": 14,
+    "uniqueOperands": 25,
+    "totalOperators": 35,
+    "totalOperands": 41,
+    "vocabulary": 39,
+    "length": 76,
+    "calculatedLength": "0.00",
+    "volume": "401.69",
+    "difficulty": "11.48",
+    "effort": "4611.41",
+    "timeRequired": "256.19 seconds",
+    "bugsDelivered": "0.1340"
+  },
+  "maintainability": {
+    "index": "121.21",
+    "rating": "Good",
+    "factors": {
+      "halsteadVolume": 401.691,
+      "cyclomaticComplexity": 4,
+      "linesOfCode": 51,
+      "commentDensity": 56.86274509803921
+    },
+    "components": {
+      "withoutComment": "75.21",
+      "commentWeight": "46.00"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "23.88",
+    "maxNestingLevel": 2,
+    "todoComments": 0,
+    "imports": 4,
+    "exports": 2,
+    "couplingIndicator": 6,
+    "cohesionIndicator": 2,
+    "interfaces": 0,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 0
+  }
+}

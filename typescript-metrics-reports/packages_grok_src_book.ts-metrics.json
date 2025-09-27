@@ -1,0 +1,55 @@
+{
+  "file": "packages/grok/src/book.ts",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/grok/src/book.ts",
+  "timestamp": "2025-09-27T10:38:11.554Z",
+  "loc": {
+    "physical": 47,
+    "source": 39,
+    "comments": 0,
+    "blank": 8,
+    "commentDensity": "0.00%"
+  },
+  "complexity": {
+    "cyclomatic": 21,
+    "cyclomaticDensity": "0.45",
+    "functions": 0,
+    "averageComplexity": 21
+  },
+  "halstead": {
+    "uniqueOperators": 40,
+    "uniqueOperands": 38,
+    "totalOperators": 270,
+    "totalOperands": 98,
+    "vocabulary": 78,
+    "length": 368,
+    "calculatedLength": "412.30",
+    "volume": "2313.03",
+    "difficulty": "51.58",
+    "effort": "119303.55",
+    "timeRequired": "6627.98 seconds",
+    "bugsDelivered": "0.7710"
+  },
+  "maintainability": {
+    "index": "66.54",
+    "normalizedIndex": "38.91",
+    "rating": "Low",
+    "factors": {
+      "halsteadVolume": 2313.03,
+      "cyclomaticComplexity": 21,
+      "linesOfCode": 39
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "29.55",
+    "maxNestingLevel": 3,
+    "todoComments": 0,
+    "imports": 2,
+    "exports": 1,
+    "couplingIndicator": 3,
+    "cohesionIndicator": 3,
+    "interfaces": 0,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 0
+  }
+}

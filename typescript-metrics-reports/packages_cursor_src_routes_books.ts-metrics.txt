@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/cursor/src/routes/books.ts
+Analysis Date: 2025-09-27T10:38:11.522Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 169
+Source Lines: 145
+Comment Lines: 24
+Blank Lines: N/A
+Comment Density: 14.20%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 28
+Cyclomatic Density: 19.31
+Average Function Complexity: 5.40
+Number of Functions: 5
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 24
+Unique Operands: 81
+Vocabulary: 105
+Length: 544
+Volume: 3652.55
+Difficulty: 39.70
+Effort: 145019.75
+Time Required: 8056.65 seconds
+Bugs Delivered: 1.2180
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 66.36
+Rating: Moderate
+MI Without Comments: 38.80
+MI Comment Weight: 27.56
+Comment Density: 14.20%
+
+CODE QUALITY
+------------
+Average Line Length: 26.92
+Max Nesting Level: 6
+TODO Comments: 0
+Imports: 4
+Exports: 1
+Coupling Indicator: 5
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: N/A
+Types: 2
+Enums: N/A
+Total Type Definitions: 2

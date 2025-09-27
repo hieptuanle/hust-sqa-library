@@ -1,0 +1,7 @@
+Package,File_Count,Avg_Lines_Of_Code,Avg_Physical_LOC,Avg_Comment_Lines,Avg_Comment_Percentage,Avg_Cyclomatic_Complexity,Avg_Halstead_Volume,Maintainability_Index,MI_Rating,MI_Without_Comments,MI_Comment_Weight
+"claude",8,66.50,77.25,10.75,17.94%,12.38,1799.02,89.26,"Good",58.76,30.50
+"cursor",8,99.25,165.38,66.13,25.93%,19.00,2856.45,77.97,"Moderate",42.50,35.48
+"deepseek",3,110.67,127.33,16.67,20.99%,17.00,2866.48,79.76,"Moderate",47.18,32.58
+"gemini",3,130.33,132.33,2.00,28.21%,24.00,3702.63,80.26,"Moderate",43.61,36.65
+"gpt",7,107.43,122.00,12.14,11.74%,25.43,3601.89,70.05,"Moderate",44.74,25.31
+"grok",4,63.00,74.75,7.75,10.31%,17.50,2106.53,81.15,"Moderate",57.29,23.86

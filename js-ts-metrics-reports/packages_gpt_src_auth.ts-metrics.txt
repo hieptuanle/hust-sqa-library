@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/gpt/src/auth.ts
+Analysis Date: 2025-09-27T10:44:32.881Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 28
+Source Lines: 23
+Comment Lines: 5
+Blank Lines: N/A
+Comment Density: 17.86%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 4
+Cyclomatic Density: 17.39
+Average Function Complexity: 1.50
+Number of Functions: 2
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 9
+Unique Operands: 21
+Vocabulary: 30
+Length: 89
+Volume: 436.71
+Difficulty: 11.36
+Effort: 4959.81
+Time Required: 275.55 seconds
+Bugs Delivered: 0.1460
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 114.93
+Rating: Good
+MI Without Comments: 84.49
+MI Comment Weight: 30.44
+Comment Density: 17.86%
+
+CODE QUALITY
+------------
+Average Line Length: 26.61
+Max Nesting Level: 2
+TODO Comments: 0
+Imports: 1
+Exports: 3
+Coupling Indicator: 4
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: 1
+Types: N/A
+Enums: N/A
+Total Type Definitions: 1

@@ -1,0 +1,141 @@
+{
+  "file": "typescript-metrics-analyzer.js",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/typescript-metrics-analyzer.js",
+  "timestamp": "2025-09-27T10:44:32.916Z",
+  "loc": {
+    "physical": 1046,
+    "source": 747,
+    "comments": 299,
+    "blank": 0,
+    "commentDensity": "28.59%"
+  },
+  "complexity": {
+    "cyclomatic": 211,
+    "cyclomaticDensity": "28.25",
+    "functions": [
+      {
+        "cyclomatic": 5,
+        "cyclomaticDensity": 25,
+        "halstead": {
+          "bugs": 0.166,
+          "difficulty": 10.5,
+          "effort": 5216.487,
+          "length": 91,
+          "time": 289.805,
+          "vocabulary": 44,
+          "volume": 496.808,
+          "operands": {
+            "distinct": 30,
+            "total": 45,
+            "identifiers": [
+              "args",
+              "process",
+              "argv",
+              "slice",
+              "2",
+              "analyzer",
+              "JavaScriptMetricsAnalyzer",
+              "length",
+              "0",
+              "analyzeAll",
+              "\"--help\"",
+              "\"-h\"",
+              "console",
+              "log",
+              "colors",
+              "bright",
+              "reset",
+              "📆 JavaScript/TypeScript Code Metrics Analyzer",
+              "\n\nUsage:\n  node typescript-metrics-analyzer.js                    # Analyze all JS/TS files\n  node typescript-metrics-analyzer.js <file-path>        # Analyze specific file\n  node typescript-metrics-analyzer.js --help            # Show this help\n\nMetrics included:\n  • Lines of Code (LOC) - Physical, Source, Comments, Blank\n  • Cyclomatic Complexity - Function and overall complexity\n  • Halstead Metrics - Volume, Difficulty, Effort, Bugs\n  • Maintainability Index - Microsoft's maintainability formula\n  • Code Quality - Coupling, Cohesion indicators\n  • TypeScript Specific - Interfaces, Types, Enums\n  • Package Aggregation - Package-level metrics and rankings\n\nReports are saved to: ./js-ts-metrics-reports/\n",
+              "filePath",
+              "fullPath",
+              "path",
+              "resolve",
+              "analyzeFile",
+              "Object",
+              "keys",
+              "results",
+              "1",
+              "generateComparisonReport",
+              "printSummary"
+            ]
+          },
+          "operators": {
+            "distinct": 14,
+            "total": 46,
+            "identifiers": [
+              "const",
+              "=",
+              "()",
+              ".",
+              "new",
+              "if",
+              "else",
+              "===",
+              "||",
+              "[]",
+              "``",
+              "${}",
+              "forof",
+              ">"
+            ]
+          }
+        },
+        "paramCount": 0,
+        "sloc": {
+          "logical": 20,
+          "physical": 38
+        },
+        "errors": [],
+        "lineEnd": 1044,
+        "lineStart": 1007,
+        "name": "main",
+        "paramNames": [],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      }
+    ],
+    "averageComplexity": "5.00"
+  },
+  "halstead": {
+    "uniqueOperators": 40,
+    "uniqueOperands": 593,
+    "totalOperators": 2249,
+    "totalOperands": 2328,
+    "vocabulary": 633,
+    "length": 4577,
+    "calculatedLength": "0.00",
+    "volume": "42593.84",
+    "difficulty": "78.52",
+    "effort": "3344299.15",
+    "timeRequired": "185794.40 seconds",
+    "bugsDelivered": "14.1980"
+  },
+  "maintainability": {
+    "index": "-8.76",
+    "rating": "Unknown",
+    "factors": {
+      "halsteadVolume": 42593.844,
+      "cyclomaticComplexity": 211,
+      "linesOfCode": 1046,
+      "commentDensity": 28.58508604206501
+    },
+    "components": {
+      "withoutComment": "-45.59",
+      "commentWeight": "36.84"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "33.86",
+    "maxNestingLevel": 8,
+    "todoComments": 21,
+    "imports": 4,
+    "exports": 0,
+    "couplingIndicator": 4,
+    "cohesionIndicator": 8,
+    "interfaces": 2,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 2
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "file": "packages/cursor/public/app.js",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/cursor/public/app.js",
+  "timestamp": "2025-09-27T10:44:32.851Z",
+  "loc": {
+    "physical": 398,
+    "source": 275,
+    "comments": 123,
+    "blank": 0,
+    "commentDensity": "30.90%"
+  },
+  "complexity": {
+    "cyclomatic": 51,
+    "cyclomaticDensity": "18.55",
+    "functions": [
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 100,
+        "halstead": {
+          "bugs": 0.003,
+          "difficulty": 1,
+          "effort": 8,
+          "length": 4,
+          "time": 0.444,
+          "vocabulary": 4,
+          "volume": 8,
+          "operands": {
+            "distinct": 2,
+            "total": 2,
+            "identifiers": [
+              "libraryManager",
+              "LibraryManager"
+            ]
+          },
+          "operators": {
+            "distinct": 2,
+            "total": 2,
+            "identifiers": [
+              "=",
+              "new"
+            ]
+          }
+        },
+        "paramCount": 0,
+        "sloc": {
+          "logical": 1,
+          "physical": 3
+        },
+        "errors": [],
+        "lineEnd": 397,
+        "lineStart": 395,
+        "name": "<anon method-10>",
+        "paramNames": [],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      }
+    ],
+    "averageComplexity": "1.00"
+  },
+  "halstead": {
+    "uniqueOperators": 25,
+    "uniqueOperands": 187,
+    "totalOperators": 618,
+    "totalOperands": 565,
+    "vocabulary": 212,
+    "length": 1183,
+    "calculatedLength": "0.00",
+    "volume": "9142.13",
+    "difficulty": "37.77",
+    "effort": "345274.29",
+    "timeRequired": "19181.90 seconds",
+    "bugsDelivered": "3.0470"
+  },
+  "maintainability": {
+    "index": "52.79",
+    "rating": "Difficult to maintain",
+    "factors": {
+      "halsteadVolume": 9142.13,
+      "cyclomaticComplexity": 51,
+      "linesOfCode": 398,
+      "commentDensity": 30.90452261306533
+    },
+    "components": {
+      "withoutComment": "14.86",
+      "commentWeight": "37.93"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "25.36",
+    "maxNestingLevel": 5,
+    "todoComments": 0,
+    "imports": 0,
+    "exports": 0,
+    "couplingIndicator": 0,
+    "cohesionIndicator": 5,
+    "interfaces": 1,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 1
+  }
+}

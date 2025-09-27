@@ -1,0 +1,910 @@
+{
+  "file": "packages/gpt/src/index.ts",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/gpt/src/index.ts",
+  "timestamp": "2025-09-27T10:38:11.547Z",
+  "loc": {
+    "physical": 301,
+    "source": 280,
+    "comments": 21,
+    "blank": 0,
+    "commentDensity": "6.98%"
+  },
+  "complexity": {
+    "cyclomatic": 61,
+    "cyclomaticDensity": "21.79",
+    "functions": [
+      {
+        "cyclomatic": 8,
+        "cyclomaticDensity": 29.63,
+        "halstead": {
+          "bugs": 0.26,
+          "difficulty": 18.771,
+          "effort": 14622.89,
+          "length": 136,
+          "time": 812.383,
+          "vocabulary": 53,
+          "volume": 778.997,
+          "operands": {
+            "distinct": 35,
+            "total": 73,
+            "identifiers": [
+              "req",
+              "url",
+              "method",
+              "sendJson",
+              "res",
+              "400",
+              "error",
+              "\"Invalid request.\"",
+              "hostHeader",
+              "headers",
+              "host",
+              "PORT",
+              "localhost:",
+              "URL",
+              "http://",
+              "\"GET\"",
+              "pathname",
+              "\"/\"",
+              "serveStatic",
+              "\"index.html\"",
+              "\"text/html; charset=utf-8\"",
+              "startsWith",
+              "\"/static/\"",
+              "relativePath",
+              "replace",
+              "\"\"",
+              "\"/api/\"",
+              "handleApiRequest",
+              "searchParams",
+              "404",
+              "\"Not found.\"",
+              "console",
+              "\"Unexpected error\"",
+              "500",
+              "\"Internal server error.\""
+            ]
+          },
+          "operators": {
+            "distinct": 18,
+            "total": 63,
+            "identifiers": [
+              "try",
+              "if",
+              "||",
+              "! (prefix)",
+              ".",
+              "return",
+              "()",
+              "{}",
+              ":",
+              "const",
+              "=",
+              "??",
+              "``",
+              "${}",
+              "new",
+              "&&",
+              "===",
+              "catch"
+            ]
+          }
+        },
+        "paramCount": 2,
+        "sloc": {
+          "logical": 27,
+          "physical": 29
+        },
+        "errors": [],
+        "lineEnd": 51,
+        "lineStart": 23,
+        "name": "<anon method-1>",
+        "paramNames": [
+          "req",
+          "res"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 100,
+        "halstead": {
+          "bugs": 0.008,
+          "difficulty": 2,
+          "effort": 48,
+          "length": 8,
+          "time": 2.667,
+          "vocabulary": 8,
+          "volume": 24,
+          "operands": {
+            "distinct": 4,
+            "total": 4,
+            "identifiers": [
+              "console",
+              "log",
+              "PORT",
+              "Library manager running on http://localhost:"
+            ]
+          },
+          "operators": {
+            "distinct": 4,
+            "total": 4,
+            "identifiers": [
+              "()",
+              ".",
+              "``",
+              "${}"
+            ]
+          }
+        },
+        "paramCount": 0,
+        "sloc": {
+          "logical": 1,
+          "physical": 3
+        },
+        "errors": [],
+        "lineEnd": 55,
+        "lineStart": 53,
+        "name": "<anon method-2>",
+        "paramNames": [],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 25,
+        "cyclomaticDensity": 19.685,
+        "halstead": {
+          "bugs": 1.143,
+          "difficulty": 21.959,
+          "effort": 75322.433,
+          "length": 502,
+          "time": 4184.58,
+          "vocabulary": 114,
+          "volume": 3430.111,
+          "operands": {
+            "distinct": 98,
+            "total": 269,
+            "identifiers": [
+              "Promise",
+              "session",
+              "sessionStore",
+              "getSession",
+              "getCookie",
+              "req",
+              "\"sessionId\"",
+              "method",
+              "\"GET\"",
+              "pathname",
+              "\"/api/session\"",
+              "sendJson",
+              "res",
+              "200",
+              "user",
+              "id",
+              "userId",
+              "username",
+              "null",
+              "\"POST\"",
+              "\"/api/register\"",
+              "payload",
+              "readJsonPayload",
+              "sanitizeUsername",
+              "password",
+              "sanitizePassword",
+              "database",
+              "getUserByUsername",
+              "409",
+              "error",
+              "\"Username already exists.\"",
+              "digest",
+              "hashPassword",
+              "createUser",
+              "cryptoRandomId",
+              "passwordHash",
+              "hash",
+              "passwordSalt",
+              "salt",
+              "createdAt",
+              "Date",
+              "now",
+              "201",
+              "message",
+              "\"Registration successful. You can now log in.\"",
+              "handleClientError",
+              "\"/api/login\"",
+              "verifyPassword",
+              "401",
+              "\"Invalid username or password.\"",
+              "newSession",
+              "createSession",
+              "setSessionCookie",
+              "sessionId",
+              "expiresAt",
+              "\"Login successful.\"",
+              "\"/api/logout\"",
+              "deleteSession",
+              "clearSessionCookie",
+              "\"Logged out successfully.\"",
+              "\"/api/books\"",
+              "query",
+              "searchParams",
+              "get",
+              "\"query\"",
+              "trim",
+              "\"\"",
+              "field",
+              "\"field\"",
+              "\"author\"",
+              "\"title\"",
+              "books",
+              "searchBooks",
+              "listBooks",
+              "\"Authentication required.\"",
+              "sanitized",
+              "sanitizeBookInput",
+              "newBook",
+              "Book",
+              "title",
+              "author",
+              "year",
+              "createBook",
+              "book",
+              "\"Book added successfully.\"",
+              "\"DELETE\"",
+              "startsWith",
+              "\"/api/books/\"",
+              "bookId",
+              "replace",
+              "400",
+              "\"Book ID is required.\"",
+              "deleted",
+              "deleteBook",
+              "404",
+              "\"Book not found.\"",
+              "\"Book deleted successfully.\"",
+              "\"API route not found.\""
+            ]
+          },
+          "operators": {
+            "distinct": 16,
+            "total": 233,
+            "identifiers": [
+              "const",
+              "=",
+              "()",
+              ".",
+              "if",
+              "&&",
+              "===",
+              "{}",
+              ":",
+              ":?",
+              "return",
+              "try",
+              "catch",
+              "||",
+              "! (prefix)",
+              "??"
+            ]
+          }
+        },
+        "paramCount": 4,
+        "sloc": {
+          "logical": 127,
+          "physical": 125
+        },
+        "errors": [],
+        "lineEnd": 182,
+        "lineStart": 58,
+        "name": "handleApiRequest",
+        "paramNames": [
+          "req",
+          "res",
+          "pathname",
+          "searchParams"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 3,
+        "cyclomaticDensity": 21.429,
+        "halstead": {
+          "bugs": 0.097,
+          "difficulty": 13.222,
+          "effort": 3865.77,
+          "length": 57,
+          "time": 214.765,
+          "vocabulary": 35,
+          "volume": 292.369,
+          "operands": {
+            "distinct": 18,
+            "total": 28,
+            "identifiers": [
+              "Promise",
+              "Record",
+              "chunks",
+              "Buffer",
+              "chunk",
+              "req",
+              "push",
+              "\"string\"",
+              "from",
+              "body",
+              "concat",
+              "toString",
+              "\"utf-8\"",
+              "JSON",
+              "parse",
+              "error",
+              "Error",
+              "\"Request body must be valid JSON.\""
+            ]
+          },
+          "operators": {
+            "distinct": 17,
+            "total": 29,
+            "identifiers": [
+              "const",
+              "=",
+              "[]",
+              "forof",
+              "()",
+              ".",
+              ":?",
+              "===",
+              "typeof (prefix)",
+              "if",
+              "! (prefix)",
+              "return",
+              "{}",
+              "try",
+              "catch",
+              "throw",
+              "new"
+            ]
+          }
+        },
+        "paramCount": 1,
+        "sloc": {
+          "logical": 14,
+          "physical": 17
+        },
+        "errors": [],
+        "lineEnd": 201,
+        "lineStart": 185,
+        "name": "readJsonPayload",
+        "paramNames": [
+          "req"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 3,
+        "cyclomaticDensity": 23.077,
+        "halstead": {
+          "bugs": 0.081,
+          "difficulty": 9.6,
+          "effort": 2327.993,
+          "length": 51,
+          "time": 129.333,
+          "vocabulary": 27,
+          "volume": 242.499,
+          "operands": {
+            "distinct": 15,
+            "total": 24,
+            "identifiers": [
+              "header",
+              "req",
+              "headers",
+              "cookie",
+              "undefined",
+              "cookies",
+              "split",
+              "\";\"",
+              "cookieName",
+              "cookieValue",
+              "trim",
+              "\"=\"",
+              "name",
+              "decodeURIComponent",
+              "\"\""
+            ]
+          },
+          "operators": {
+            "distinct": 12,
+            "total": 27,
+            "identifiers": [
+              "const",
+              "=",
+              ".",
+              "if",
+              "! (prefix)",
+              "return",
+              "()",
+              "forof",
+              "[]",
+              ",",
+              "===",
+              "??"
+            ]
+          }
+        },
+        "paramCount": 2,
+        "sloc": {
+          "logical": 13,
+          "physical": 15
+        },
+        "errors": [],
+        "lineEnd": 217,
+        "lineStart": 203,
+        "name": "getCookie",
+        "paramNames": [
+          "req",
+          "name"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 12.5,
+        "halstead": {
+          "bugs": 0.074,
+          "difficulty": 5.684,
+          "effort": 1256.997,
+          "length": 46,
+          "time": 69.833,
+          "vocabulary": 28,
+          "volume": 221.138,
+          "operands": {
+            "distinct": 19,
+            "total": 24,
+            "identifiers": [
+              "expires",
+              "Date",
+              "expiresAt",
+              "toUTCString",
+              "maxAgeSeconds",
+              "Math",
+              "max",
+              "0",
+              "floor",
+              "now",
+              "1000",
+              "res",
+              "setHeader",
+              "\"Set-Cookie\"",
+              "encodeURIComponent",
+              "sessionId",
+              "sessionId=",
+              "; HttpOnly; Path=/; SameSite=Lax; Expires=",
+              "; Max-Age="
+            ]
+          },
+          "operators": {
+            "distinct": 9,
+            "total": 22,
+            "identifiers": [
+              "const",
+              "=",
+              "()",
+              ".",
+              "new",
+              "/",
+              "-",
+              "``",
+              "${}"
+            ]
+          }
+        },
+        "paramCount": 3,
+        "sloc": {
+          "logical": 8,
+          "physical": 8
+        },
+        "errors": [],
+        "lineEnd": 226,
+        "lineStart": 219,
+        "name": "setSessionCookie",
+        "paramNames": [
+          "res",
+          "sessionId",
+          "expiresAt"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 100,
+        "halstead": {
+          "bugs": 0.005,
+          "difficulty": 1,
+          "effort": 15.51,
+          "length": 6,
+          "time": 0.862,
+          "vocabulary": 6,
+          "volume": 15.51,
+          "operands": {
+            "distinct": 4,
+            "total": 4,
+            "identifiers": [
+              "res",
+              "setHeader",
+              "\"Set-Cookie\"",
+              "\"sessionId=; HttpOnly; Path=/; SameSite=Lax; Max-Age=0\""
+            ]
+          },
+          "operators": {
+            "distinct": 2,
+            "total": 2,
+            "identifiers": [
+              "()",
+              "."
+            ]
+          }
+        },
+        "paramCount": 1,
+        "sloc": {
+          "logical": 1,
+          "physical": 6
+        },
+        "errors": [],
+        "lineEnd": 233,
+        "lineStart": 228,
+        "name": "clearSessionCookie",
+        "paramNames": [
+          "res"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 25,
+        "halstead": {
+          "bugs": 0.024,
+          "difficulty": 2,
+          "effort": 143.399,
+          "length": 20,
+          "time": 7.967,
+          "vocabulary": 12,
+          "volume": 71.699,
+          "operands": {
+            "distinct": 9,
+            "total": 12,
+            "identifiers": [
+              "res",
+              "statusCode",
+              "setHeader",
+              "\"Content-Type\"",
+              "\"application/json; charset=utf-8\"",
+              "end",
+              "JSON",
+              "stringify",
+              "payload"
+            ]
+          },
+          "operators": {
+            "distinct": 3,
+            "total": 8,
+            "identifiers": [
+              "=",
+              ".",
+              "()"
+            ]
+          }
+        },
+        "paramCount": 3,
+        "sloc": {
+          "logical": 4,
+          "physical": 5
+        },
+        "errors": [],
+        "lineEnd": 239,
+        "lineStart": 235,
+        "name": "sendJson",
+        "paramNames": [
+          "res",
+          "statusCode",
+          "payload"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 5,
+        "cyclomaticDensity": 18.519,
+        "halstead": {
+          "bugs": 0.188,
+          "difficulty": 15.534,
+          "effort": 8752.179,
+          "length": 102,
+          "time": 486.232,
+          "vocabulary": 46,
+          "volume": 563.403,
+          "operands": {
+            "distinct": 29,
+            "total": 53,
+            "identifiers": [
+              "Promise",
+              "filePath",
+              "normalize",
+              "join",
+              "PUBLIC_DIR",
+              "relativePath",
+              "allowedPrefix",
+              "endsWith",
+              "sep",
+              "startsWith",
+              "sendJson",
+              "res",
+              "403",
+              "error",
+              "\"Access denied.\"",
+              "fileStat",
+              "stat",
+              "isFile",
+              "404",
+              "\"Not found.\"",
+              "data",
+              "readFile",
+              "statusCode",
+              "200",
+              "setHeader",
+              "\"Content-Type\"",
+              "contentType",
+              "guessContentType",
+              "end"
+            ]
+          },
+          "operators": {
+            "distinct": 17,
+            "total": 49,
+            "identifiers": [
+              "const",
+              "=",
+              "()",
+              ":?",
+              ".",
+              "``",
+              "${}",
+              "if",
+              "&&",
+              "!==",
+              "! (prefix)",
+              "{}",
+              ":",
+              "return",
+              "try",
+              "??",
+              "catch"
+            ]
+          }
+        },
+        "paramCount": 3,
+        "sloc": {
+          "logical": 27,
+          "physical": 24
+        },
+        "errors": [],
+        "lineEnd": 265,
+        "lineStart": 242,
+        "name": "serveStatic",
+        "paramNames": [
+          "res",
+          "relativePath",
+          "contentType"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 9,
+        "cyclomaticDensity": 42.857,
+        "halstead": {
+          "bugs": 0.071,
+          "difficulty": 4.2,
+          "effort": 888.399,
+          "length": 44,
+          "time": 49.356,
+          "vocabulary": 28,
+          "volume": 211.524,
+          "operands": {
+            "distinct": 20,
+            "total": 21,
+            "identifiers": [
+              "extension",
+              "extname",
+              "filePath",
+              "toLowerCase",
+              "\"text/html; charset=utf-8\"",
+              "\".html\"",
+              "\"text/css; charset=utf-8\"",
+              "\".css\"",
+              "\"application/javascript; charset=utf-8\"",
+              "\".js\"",
+              "\"application/json; charset=utf-8\"",
+              "\".json\"",
+              "\"image/png\"",
+              "\".png\"",
+              "\".jpg\"",
+              "\"image/jpeg\"",
+              "\".jpeg\"",
+              "\"image/svg+xml\"",
+              "\".svg\"",
+              "\"application/octet-stream\""
+            ]
+          },
+          "operators": {
+            "distinct": 8,
+            "total": 23,
+            "identifiers": [
+              "const",
+              "=",
+              "()",
+              ".",
+              "switch",
+              "case",
+              "return",
+              "default"
+            ]
+          }
+        },
+        "paramCount": 1,
+        "sloc": {
+          "logical": 21,
+          "physical": 22
+        },
+        "errors": [],
+        "lineEnd": 288,
+        "lineStart": 267,
+        "name": "guessContentType",
+        "paramNames": [
+          "filePath"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 2,
+        "cyclomaticDensity": 33.333,
+        "halstead": {
+          "bugs": 0.029,
+          "difficulty": 6.5,
+          "effort": 569.2,
+          "length": 23,
+          "time": 31.622,
+          "vocabulary": 14,
+          "volume": 87.569,
+          "operands": {
+            "distinct": 7,
+            "total": 13,
+            "identifiers": [
+              "error",
+              "Error",
+              "sendJson",
+              "res",
+              "400",
+              "message",
+              "\"Invalid request.\""
+            ]
+          },
+          "operators": {
+            "distinct": 7,
+            "total": 10,
+            "identifiers": [
+              "if",
+              "else",
+              "instanceof",
+              "()",
+              "{}",
+              ":",
+              "."
+            ]
+          }
+        },
+        "paramCount": 2,
+        "sloc": {
+          "logical": 6,
+          "physical": 7
+        },
+        "errors": [],
+        "lineEnd": 296,
+        "lineStart": 290,
+        "name": "handleClientError",
+        "paramNames": [
+          "res",
+          "error"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 50,
+        "halstead": {
+          "bugs": 0.002,
+          "difficulty": 1,
+          "effort": 4.755,
+          "length": 3,
+          "time": 0.264,
+          "vocabulary": 3,
+          "volume": 4.755,
+          "operands": {
+            "distinct": 1,
+            "total": 1,
+            "identifiers": [
+              "randomUUID"
+            ]
+          },
+          "operators": {
+            "distinct": 2,
+            "total": 2,
+            "identifiers": [
+              "return",
+              "()"
+            ]
+          }
+        },
+        "paramCount": 0,
+        "sloc": {
+          "logical": 2,
+          "physical": 3
+        },
+        "errors": [],
+        "lineEnd": 300,
+        "lineStart": 298,
+        "name": "cryptoRandomId",
+        "paramNames": [],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      }
+    ],
+    "averageComplexity": "5.00"
+  },
+  "halstead": {
+    "uniqueOperators": 34,
+    "uniqueOperands": 222,
+    "totalOperators": 518,
+    "totalOperands": 594,
+    "vocabulary": 256,
+    "length": 1112,
+    "calculatedLength": "0.00",
+    "volume": "8896.00",
+    "difficulty": "45.49",
+    "effort": "404647.78",
+    "timeRequired": "22480.43 seconds",
+    "bugsDelivered": "2.9650"
+  },
+  "maintainability": {
+    "index": "37.12",
+    "rating": "Difficult to maintain",
+    "factors": {
+      "halsteadVolume": 8896,
+      "cyclomaticComplexity": 61,
+      "linesOfCode": 301,
+      "commentDensity": 6.976744186046512
+    },
+    "components": {
+      "withoutComment": "17.23",
+      "commentWeight": "19.89"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "30.27",
+    "maxNestingLevel": 5,
+    "todoComments": 0,
+    "imports": 10,
+    "exports": 0,
+    "couplingIndicator": 10,
+    "cohesionIndicator": 5,
+    "interfaces": 0,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 0
+  }
+}

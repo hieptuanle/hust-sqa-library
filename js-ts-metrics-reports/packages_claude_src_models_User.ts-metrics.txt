@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/claude/src/models/User.ts
+Analysis Date: 2025-09-27T10:44:32.839Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 6
+Source Lines: N/A
+Comment Lines: 6
+Blank Lines: N/A
+Comment Density: 0.00%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 1
+Cyclomatic Density: 0.00
+Average Function Complexity: 0.00
+Number of Functions: 0
+
+HALSTEAD METRICS
+----------------
+Unique Operators: N/A
+Unique Operands: 6
+Vocabulary: 6
+Length: 6
+Volume: 15.51
+Difficulty: 0.00
+Effort: 0.00
+Time Required: 0.00 seconds
+Bugs Delivered: 0.0050
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 127.49
+Rating: Good
+MI Without Comments: 127.49
+MI Comment Weight: 0.00
+Comment Density: 0.00%
+
+CODE QUALITY
+------------
+Average Line Length: 16.00
+Max Nesting Level: 1
+TODO Comments: 0
+Imports: 0
+Exports: 1
+Coupling Indicator: 1
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: 1
+Types: N/A
+Enums: N/A
+Total Type Definitions: 1

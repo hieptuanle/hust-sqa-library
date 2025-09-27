@@ -1,0 +1,188 @@
+{
+  "file": "metrics-analyzer.js",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/metrics-analyzer.js",
+  "timestamp": "2025-09-27T10:44:32.823Z",
+  "loc": {
+    "physical": 1053,
+    "source": 628,
+    "comments": 425,
+    "blank": 0,
+    "commentDensity": "40.36%"
+  },
+  "complexity": {
+    "cyclomatic": 202,
+    "cyclomaticDensity": "32.17",
+    "functions": [
+      {
+        "cyclomatic": 5,
+        "cyclomaticDensity": 22.727,
+        "halstead": {
+          "bugs": 0.184,
+          "difficulty": 11.136,
+          "effort": 6157.421,
+          "length": 99,
+          "time": 342.079,
+          "vocabulary": 48,
+          "volume": 552.911,
+          "operands": {
+            "distinct": 33,
+            "total": 49,
+            "identifiers": [
+              "args",
+              "process",
+              "argv",
+              "slice",
+              "2",
+              "analyzer",
+              "MetricsAnalyzer",
+              "length",
+              "0",
+              "analyzeAll",
+              "\"--help\"",
+              "\"-h\"",
+              "console",
+              "log",
+              "colors",
+              "bright",
+              "reset",
+              "Object",
+              "keys",
+              "packages",
+              "map",
+              "name",
+              "join",
+              "\"\n  \"",
+              "📊 Code Metrics Analyzer",
+              "\n\nUsage:\n  node metrics-analyzer.js                    # Analyze all implementations\n  node metrics-analyzer.js <package-name>     # Analyze specific implementation\n  node metrics-analyzer.js --help            # Show this help\n\nAvailable packages:\n  ",
+              "\n\nMetrics included:\n  • Lines of Code (LOC) - Physical, Source, Comments, Blank\n  • Cyclomatic Complexity - Function and overall complexity\n  • Halstead Metrics - Volume, Difficulty, Effort, Bugs\n  • Maintainability Index - Microsoft's maintainability formula\n  • Code Quality - Coupling, Cohesion indicators\n  • Code Duplication - Duplicate code detection\n\nReports are saved to: ./metrics-reports/\n",
+              "packageName",
+              "analyzePackage",
+              "results",
+              "1",
+              "generateComparisonReport",
+              "printSummary"
+            ]
+          },
+          "operators": {
+            "distinct": 15,
+            "total": 50,
+            "identifiers": [
+              "const",
+              "=",
+              "()",
+              ".",
+              "new",
+              "if",
+              "else",
+              "===",
+              "||",
+              "[]",
+              "``",
+              "${}",
+              "function=>",
+              "forof",
+              ">"
+            ]
+          }
+        },
+        "paramCount": 0,
+        "sloc": {
+          "logical": 22,
+          "physical": 42
+        },
+        "errors": [],
+        "lineEnd": 1050,
+        "lineStart": 1009,
+        "name": "main",
+        "paramNames": [],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      },
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 100,
+        "halstead": {
+          "bugs": 0.003,
+          "difficulty": 1,
+          "effort": 8,
+          "length": 4,
+          "time": 0.444,
+          "vocabulary": 4,
+          "volume": 8,
+          "operands": {
+            "distinct": 2,
+            "total": 2,
+            "identifiers": [
+              "name",
+              "- "
+            ]
+          },
+          "operators": {
+            "distinct": 2,
+            "total": 2,
+            "identifiers": [
+              "``",
+              "${}"
+            ]
+          }
+        },
+        "paramCount": 1,
+        "sloc": {
+          "logical": 1,
+          "physical": 1
+        },
+        "errors": [],
+        "lineEnd": 1026,
+        "lineStart": 1026,
+        "name": "<anon method-15>",
+        "paramNames": [
+          "name"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      }
+    ],
+    "averageComplexity": "3.00"
+  },
+  "halstead": {
+    "uniqueOperators": 41,
+    "uniqueOperands": 527,
+    "totalOperators": 1822,
+    "totalOperands": 1920,
+    "vocabulary": 568,
+    "length": 3742,
+    "calculatedLength": "0.00",
+    "volume": "34238.35",
+    "difficulty": "74.69",
+    "effort": "2557156.74",
+    "timeRequired": "142064.26 seconds",
+    "bugsDelivered": "11.4130"
+  },
+  "maintainability": {
+    "index": "-0.85",
+    "rating": "Unknown",
+    "factors": {
+      "halsteadVolume": 34238.354,
+      "cyclomaticComplexity": 202,
+      "linesOfCode": 1053,
+      "commentDensity": 40.36087369420703
+    },
+    "components": {
+      "withoutComment": "-42.50",
+      "commentWeight": "41.64"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "28.90",
+    "maxNestingLevel": 8,
+    "todoComments": 21,
+    "imports": 4,
+    "exports": 0,
+    "couplingIndicator": 4,
+    "cohesionIndicator": 8,
+    "interfaces": 2,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 2
+  }
+}

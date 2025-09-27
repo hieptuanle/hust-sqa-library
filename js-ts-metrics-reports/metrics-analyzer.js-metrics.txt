@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: metrics-analyzer.js
+Analysis Date: 2025-09-27T10:44:32.823Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 1053
+Source Lines: 628
+Comment Lines: 425
+Blank Lines: N/A
+Comment Density: 40.36%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 202
+Cyclomatic Density: 32.17
+Average Function Complexity: 3.00
+Number of Functions: 2
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 41
+Unique Operands: 527
+Vocabulary: 568
+Length: 3742
+Volume: 34238.35
+Difficulty: 74.69
+Effort: 2557156.74
+Time Required: 142064.26 seconds
+Bugs Delivered: 11.4130
+
+MAINTAINABILITY
+---------------
+Maintainability Index: -0.85
+Rating: Unknown
+MI Without Comments: -42.50
+MI Comment Weight: 41.64
+Comment Density: 40.36%
+
+CODE QUALITY
+------------
+Average Line Length: 28.90
+Max Nesting Level: 8
+TODO Comments: 21
+Imports: 4
+Exports: 0
+Coupling Indicator: 4
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: 2
+Types: N/A
+Enums: N/A
+Total Type Definitions: 2

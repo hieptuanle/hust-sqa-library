@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: typescript-metrics-analyzer.js
+Analysis Date: 2025-09-27T10:44:32.916Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 1046
+Source Lines: 747
+Comment Lines: 299
+Blank Lines: N/A
+Comment Density: 28.59%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 211
+Cyclomatic Density: 28.25
+Average Function Complexity: 5.00
+Number of Functions: 1
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 40
+Unique Operands: 593
+Vocabulary: 633
+Length: 4577
+Volume: 42593.84
+Difficulty: 78.52
+Effort: 3344299.15
+Time Required: 185794.40 seconds
+Bugs Delivered: 14.1980
+
+MAINTAINABILITY
+---------------
+Maintainability Index: -8.76
+Rating: Unknown
+MI Without Comments: -45.59
+MI Comment Weight: 36.84
+Comment Density: 28.59%
+
+CODE QUALITY
+------------
+Average Line Length: 33.86
+Max Nesting Level: 8
+TODO Comments: 21
+Imports: 4
+Exports: 0
+Coupling Indicator: 4
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: 2
+Types: N/A
+Enums: N/A
+Total Type Definitions: 2

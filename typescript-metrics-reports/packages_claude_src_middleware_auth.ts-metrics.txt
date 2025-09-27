@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/claude/src/middleware/auth.ts
+Analysis Date: 2025-09-27T10:38:11.500Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 15
+Source Lines: 7
+Comment Lines: 8
+Blank Lines: N/A
+Comment Density: 53.33%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 3
+Cyclomatic Density: 42.86
+Average Function Complexity: 2.00
+Number of Functions: 1
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 8
+Unique Operands: 14
+Vocabulary: 22
+Length: 31
+Volume: 138.24
+Difficulty: 5.14
+Effort: 710.96
+Time Required: 39.50 seconds
+Bugs Delivered: 0.0460
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 146.06
+Rating: Good
+MI Without Comments: 100.81
+MI Comment Weight: 45.25
+Comment Density: 53.33%
+
+CODE QUALITY
+------------
+Average Line Length: 23.47
+Max Nesting Level: 3
+TODO Comments: 0
+Imports: 1
+Exports: 1
+Coupling Indicator: 2
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: 1
+Types: N/A
+Enums: N/A
+Total Type Definitions: 1

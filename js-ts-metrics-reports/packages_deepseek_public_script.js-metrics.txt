@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/deepseek/public/script.js
+Analysis Date: 2025-09-27T10:44:32.866Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 197
+Source Lines: 181
+Comment Lines: 16
+Blank Lines: N/A
+Comment Density: 8.12%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 19
+Cyclomatic Density: 10.50
+Average Function Complexity: 1.38
+Number of Functions: 13
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 17
+Unique Operands: 126
+Vocabulary: 143
+Length: 699
+Volume: 5004.75
+Difficulty: 25.57
+Effort: 127958.75
+Time Required: 7108.82 seconds
+Bugs Delivered: 1.6680
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 58.11
+Rating: Difficult to maintain
+MI Without Comments: 36.75
+MI Comment Weight: 21.36
+Comment Density: 8.12%
+
+CODE QUALITY
+------------
+Average Line Length: 26.58
+Max Nesting Level: 4
+TODO Comments: 0
+Imports: 0
+Exports: 0
+Coupling Indicator: N/A
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: N/A
+Types: N/A
+Enums: N/A
+Total Type Definitions: N/A

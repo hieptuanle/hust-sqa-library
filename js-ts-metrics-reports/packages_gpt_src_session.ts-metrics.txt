@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/gpt/src/session.ts
+Analysis Date: 2025-09-27T10:44:32.890Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 41
+Source Lines: 29
+Comment Lines: 12
+Blank Lines: N/A
+Comment Density: 29.27%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 8
+Cyclomatic Density: 27.59
+Average Function Complexity: 0.00
+Number of Functions: 0
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 14
+Unique Operands: 23
+Vocabulary: 37
+Length: 111
+Volume: 578.25
+Difficulty: 18.26
+Effort: 10559.33
+Time Required: 586.63 seconds
+Bugs Delivered: 0.1930
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 113.10
+Rating: Good
+MI Without Comments: 75.93
+MI Comment Weight: 37.17
+Comment Density: 29.27%
+
+CODE QUALITY
+------------
+Average Line Length: 24.00
+Max Nesting Level: 3
+TODO Comments: 0
+Imports: 2
+Exports: 1
+Coupling Indicator: 3
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: N/A
+Types: N/A
+Enums: N/A
+Total Type Definitions: N/A

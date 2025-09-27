@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/grok/src/book.ts
+Analysis Date: 2025-09-27T10:38:11.554Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 47
+Source Lines: 39
+Comment Lines: N/A
+Blank Lines: 8
+Comment Density: 0.00%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 21
+Cyclomatic Density: 0.45
+Average Function Complexity: 21
+Number of Functions: N/A
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 40
+Unique Operands: 38
+Vocabulary: 78
+Length: 368
+Volume: 2313.03
+Difficulty: 51.58
+Effort: 119303.55
+Time Required: 6627.98 seconds
+Bugs Delivered: 0.7710
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 66.54
+Rating: Low
+MI Without Comments: N/A
+MI Comment Weight: N/A
+Comment Density: N/A%
+
+CODE QUALITY
+------------
+Average Line Length: 29.55
+Max Nesting Level: 3
+TODO Comments: 0
+Imports: 2
+Exports: 1
+Coupling Indicator: 3
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: N/A
+Types: N/A
+Enums: N/A
+Total Type Definitions: N/A

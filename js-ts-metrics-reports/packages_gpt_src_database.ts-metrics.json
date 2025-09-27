@@ -1,0 +1,55 @@
+{
+  "file": "packages/gpt/src/database.ts",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/gpt/src/database.ts",
+  "timestamp": "2025-09-27T10:44:32.884Z",
+  "loc": {
+    "physical": 132,
+    "source": 113,
+    "comments": 2,
+    "blank": 17,
+    "commentDensity": "1.74%"
+  },
+  "complexity": {
+    "cyclomatic": 41,
+    "cyclomaticDensity": "0.31",
+    "functions": 3,
+    "averageComplexity": "13.67"
+  },
+  "halstead": {
+    "uniqueOperators": 49,
+    "uniqueOperands": 108,
+    "totalOperators": 602,
+    "totalOperands": 253,
+    "vocabulary": 157,
+    "length": 855,
+    "calculatedLength": "1004.65",
+    "volume": "6236.90",
+    "difficulty": "57.39",
+    "effort": "357957.68",
+    "timeRequired": "19886.54 seconds",
+    "bugsDelivered": "2.0790"
+  },
+  "maintainability": {
+    "index": "39.55",
+    "normalizedIndex": "23.13",
+    "rating": "Critical",
+    "factors": {
+      "halsteadVolume": 6236.9,
+      "cyclomaticComplexity": 41,
+      "linesOfCode": 113
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "32.97",
+    "maxNestingLevel": 3,
+    "todoComments": 0,
+    "imports": 4,
+    "exports": 1,
+    "couplingIndicator": 5,
+    "cohesionIndicator": 3,
+    "interfaces": 0,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 0
+  }
+}

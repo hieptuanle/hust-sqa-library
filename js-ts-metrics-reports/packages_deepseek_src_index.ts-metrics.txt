@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/deepseek/src/index.ts
+Analysis Date: 2025-09-27T10:44:32.870Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 92
+Source Lines: 109
+Comment Lines: -17
+Blank Lines: N/A
+Comment Density: 0.00%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 16
+Cyclomatic Density: 14.68
+Average Function Complexity: 2.14
+Number of Functions: 7
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 16
+Unique Operands: 59
+Vocabulary: 75
+Length: 399
+Volume: 2485.30
+Difficulty: 30.10
+Effort: 74811.70
+Time Required: 4156.21 seconds
+Bugs Delivered: 0.8280
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 53.41
+Rating: Difficult to maintain
+MI Without Comments: 53.41
+MI Comment Weight: 0.00
+Comment Density: 0.00%
+
+CODE QUALITY
+------------
+Average Line Length: 25.85
+Max Nesting Level: 4
+TODO Comments: 0
+Imports: 1
+Exports: 0
+Coupling Indicator: 1
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: N/A
+Types: N/A
+Enums: N/A
+Total Type Definitions: N/A

@@ -1,0 +1,118 @@
+{
+  "file": "packages/claude/src/middleware/auth.ts",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/claude/src/middleware/auth.ts",
+  "timestamp": "2025-09-27T10:38:11.500Z",
+  "loc": {
+    "physical": 15,
+    "source": 7,
+    "comments": 8,
+    "blank": 0,
+    "commentDensity": "53.33%"
+  },
+  "complexity": {
+    "cyclomatic": 3,
+    "cyclomaticDensity": "42.86",
+    "functions": [
+      {
+        "cyclomatic": 2,
+        "cyclomaticDensity": 33.333,
+        "halstead": {
+          "bugs": 0.03,
+          "difficulty": 3.5,
+          "effort": 314.735,
+          "length": 22,
+          "time": 17.485,
+          "vocabulary": 17,
+          "volume": 89.924,
+          "operands": {
+            "distinct": 10,
+            "total": 10,
+            "identifiers": [
+              "req",
+              "session",
+              "userId",
+              "res",
+              "status",
+              "401",
+              "json",
+              "error",
+              "\"Authentication required\"",
+              "next"
+            ]
+          },
+          "operators": {
+            "distinct": 7,
+            "total": 12,
+            "identifiers": [
+              "if",
+              "! (prefix)",
+              ".",
+              "return",
+              "()",
+              "{}",
+              ":"
+            ]
+          }
+        },
+        "paramCount": 3,
+        "sloc": {
+          "logical": 6,
+          "physical": 6
+        },
+        "errors": [],
+        "lineEnd": 15,
+        "lineStart": 10,
+        "name": "requireAuth",
+        "paramNames": [
+          "req",
+          "res",
+          "next"
+        ],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      }
+    ],
+    "averageComplexity": "2.00"
+  },
+  "halstead": {
+    "uniqueOperators": 8,
+    "uniqueOperands": 14,
+    "totalOperators": 13,
+    "totalOperands": 18,
+    "vocabulary": 22,
+    "length": 31,
+    "calculatedLength": "0.00",
+    "volume": "138.24",
+    "difficulty": "5.14",
+    "effort": "710.96",
+    "timeRequired": "39.50 seconds",
+    "bugsDelivered": "0.0460"
+  },
+  "maintainability": {
+    "index": "146.06",
+    "rating": "Good",
+    "factors": {
+      "halsteadVolume": 138.242,
+      "cyclomaticComplexity": 3,
+      "linesOfCode": 15,
+      "commentDensity": 53.333333333333336
+    },
+    "components": {
+      "withoutComment": "100.81",
+      "commentWeight": "45.25"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "23.47",
+    "maxNestingLevel": 3,
+    "todoComments": 0,
+    "imports": 1,
+    "exports": 1,
+    "couplingIndicator": 2,
+    "cohesionIndicator": 3,
+    "interfaces": 1,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 1
+  }
+}

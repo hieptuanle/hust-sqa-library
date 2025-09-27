@@ -1,0 +1,104 @@
+{
+  "file": "packages/gemini/src/database.ts",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/gemini/src/database.ts",
+  "timestamp": "2025-09-27T10:38:11.532Z",
+  "loc": {
+    "physical": 27,
+    "source": 5,
+    "comments": 22,
+    "blank": 0,
+    "commentDensity": "81.48%"
+  },
+  "complexity": {
+    "cyclomatic": 2,
+    "cyclomaticDensity": "40.00",
+    "functions": [
+      {
+        "cyclomatic": 1,
+        "cyclomaticDensity": 50,
+        "halstead": {
+          "bugs": 0.011,
+          "difficulty": 2.25,
+          "effort": 75.799,
+          "length": 12,
+          "time": 4.211,
+          "vocabulary": 7,
+          "volume": 33.688,
+          "operands": {
+            "distinct": 4,
+            "total": 6,
+            "identifiers": [
+              "db",
+              "run",
+              "\n        CREATE TABLE IF NOT EXISTS users (\n            id INTEGER PRIMARY KEY AUTOINCREMENT,\n            username TEXT UNIQUE,\n            password TEXT\n        )\n    ",
+              "\n        CREATE TABLE IF NOT EXISTS books (\n            id TEXT PRIMARY KEY,\n            title TEXT,\n            author TEXT,\n            year INTEGER\n        )\n    "
+            ]
+          },
+          "operators": {
+            "distinct": 3,
+            "total": 6,
+            "identifiers": [
+              "()",
+              ".",
+              "``"
+            ]
+          }
+        },
+        "paramCount": 0,
+        "sloc": {
+          "logical": 2,
+          "physical": 18
+        },
+        "errors": [],
+        "lineEnd": 24,
+        "lineStart": 7,
+        "name": "<anon method-1>",
+        "paramNames": [],
+        "maxNestedMethodDepth": 0,
+        "nestedMethods": []
+      }
+    ],
+    "averageComplexity": "1.00"
+  },
+  "halstead": {
+    "uniqueOperators": 7,
+    "uniqueOperands": 8,
+    "totalOperators": 13,
+    "totalOperands": 13,
+    "vocabulary": 15,
+    "length": 26,
+    "calculatedLength": "0.00",
+    "volume": "101.58",
+    "difficulty": "5.69",
+    "effort": "577.73",
+    "timeRequired": "32.10 seconds",
+    "bugsDelivered": "0.0340"
+  },
+  "maintainability": {
+    "index": "142.38",
+    "rating": "Good",
+    "factors": {
+      "halsteadVolume": 101.579,
+      "cyclomaticComplexity": 2,
+      "linesOfCode": 27,
+      "commentDensity": 81.48148148148148
+    },
+    "components": {
+      "withoutComment": "93.12",
+      "commentWeight": "49.26"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "18.63",
+    "maxNestingLevel": 1,
+    "todoComments": 0,
+    "imports": 2,
+    "exports": 1,
+    "couplingIndicator": 3,
+    "cohesionIndicator": 1,
+    "interfaces": 0,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 0
+  }
+}

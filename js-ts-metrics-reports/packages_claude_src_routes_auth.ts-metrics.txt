@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/claude/src/routes/auth.ts
+Analysis Date: 2025-09-27T10:44:32.841Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 99
+Source Lines: 93
+Comment Lines: 6
+Blank Lines: N/A
+Comment Density: 6.06%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 17
+Cyclomatic Density: 18.28
+Average Function Complexity: 3.20
+Number of Functions: 5
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 16
+Unique Operands: 56
+Vocabulary: 72
+Length: 374
+Volume: 2307.55
+Difficulty: 27.14
+Effort: 62633.55
+Time Required: 3479.64 seconds
+Bugs Delivered: 0.7690
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 70.99
+Rating: Moderate
+MI Without Comments: 52.38
+MI Comment Weight: 18.61
+Comment Density: 6.06%
+
+CODE QUALITY
+------------
+Average Line Length: 24.40
+Max Nesting Level: 4
+TODO Comments: 0
+Imports: 4
+Exports: 1
+Coupling Indicator: 5
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: N/A
+Types: N/A
+Enums: N/A
+Total Type Definitions: N/A

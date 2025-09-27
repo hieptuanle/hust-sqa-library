@@ -1,0 +1,56 @@
+
+CODE METRICS REPORT
+===================
+File: packages/cursor/public/app.js
+Analysis Date: 2025-09-27T10:44:32.851Z
+
+LINES OF CODE (LOC)
+-------------------
+Physical Lines: 398
+Source Lines: 275
+Comment Lines: 123
+Blank Lines: N/A
+Comment Density: 30.90%
+
+COMPLEXITY METRICS
+------------------
+Cyclomatic Complexity: 51
+Cyclomatic Density: 18.55
+Average Function Complexity: 1.00
+Number of Functions: 1
+
+HALSTEAD METRICS
+----------------
+Unique Operators: 25
+Unique Operands: 187
+Vocabulary: 212
+Length: 1183
+Volume: 9142.13
+Difficulty: 37.77
+Effort: 345274.29
+Time Required: 19181.90 seconds
+Bugs Delivered: 3.0470
+
+MAINTAINABILITY
+---------------
+Maintainability Index: 52.79
+Rating: Difficult to maintain
+MI Without Comments: 14.86
+MI Comment Weight: 37.93
+Comment Density: 30.90%
+
+CODE QUALITY
+------------
+Average Line Length: 25.36
+Max Nesting Level: 5
+TODO Comments: 0
+Imports: 0
+Exports: 0
+Coupling Indicator: N/A
+
+TYPESCRIPT SPECIFIC
+-------------------
+Interfaces: 1
+Types: N/A
+Enums: N/A
+Total Type Definitions: 1

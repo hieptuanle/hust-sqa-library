@@ -1,0 +1,59 @@
+{
+  "file": "packages/cursor/src/models/User.ts",
+  "fullPath": "/Users/hieple/projects/hust-sqa-library/packages/cursor/src/models/User.ts",
+  "timestamp": "2025-09-27T10:44:32.856Z",
+  "loc": {
+    "physical": 42,
+    "source": 0,
+    "comments": 42,
+    "blank": 0,
+    "commentDensity": "0.00%"
+  },
+  "complexity": {
+    "cyclomatic": 1,
+    "cyclomaticDensity": "0.00",
+    "functions": [],
+    "averageComplexity": "0.00"
+  },
+  "halstead": {
+    "uniqueOperators": 0,
+    "uniqueOperands": 11,
+    "totalOperators": 0,
+    "totalOperands": 20,
+    "vocabulary": 11,
+    "length": 20,
+    "calculatedLength": "0.00",
+    "volume": "69.19",
+    "difficulty": "0.00",
+    "effort": "0.00",
+    "timeRequired": "0.00 seconds",
+    "bugsDelivered": "0.0230"
+  },
+  "maintainability": {
+    "index": "88.19",
+    "rating": "Good",
+    "factors": {
+      "halsteadVolume": 69.189,
+      "cyclomaticComplexity": 1,
+      "linesOfCode": 42,
+      "commentDensity": 0
+    },
+    "components": {
+      "withoutComment": "88.19",
+      "commentWeight": "0.00"
+    }
+  },
+  "codeQuality": {
+    "averageLineLength": "16.45",
+    "maxNestingLevel": 1,
+    "todoComments": 0,
+    "imports": 0,
+    "exports": 4,
+    "couplingIndicator": 4,
+    "cohesionIndicator": 1,
+    "interfaces": 4,
+    "types": 0,
+    "enums": 0,
+    "typeDefinitions": 4
+  }
+}
