@@ -2,6 +2,7 @@ packages:
   - packages/*
 
 onlyBuiltDependencies:
+  - bcrypt
   - core-js
   - es5-ext
   - sqlite3

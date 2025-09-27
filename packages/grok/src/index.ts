@@ -1,150 +1,114 @@
-// src/index.ts
-// Main entry point for the server.
-// Sets up Express, sessions, EJS views, and routes for auth, add, delete, search.
-// Integrates with db.ts for persistence.
-// Handles input validation and graceful error handling.
-
 import express from 'express';
 import session from 'express-session';
 import path from 'path';
-import bcrypt from 'bcrypt';
-import { initDB, addBook, deleteBook, getBooks, searchBooks, getUserByUsername, addUser } from './db';
+import { fileURLToPath } from 'url';
+import { DatabaseService } from './database.js';
+import { AuthService } from './auth.js';
+import { BookService } from './book.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 3000;
-const currentYear = new Date().getFullYear();
+const port = 3001;
 
-// Middleware setup
-app.use(express.urlencoded({ extended: true }));
+// Middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(session({
-  secret: 'secret-key', // Change this in production for security
+  secret: 'your-secret-key',
   resave: false,
-  saveUninitialized: true,
+  saveUninitialized: false
 }));
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '../views'));
 
-// Initialize DB on startup (auto-loads data)
-initDB();
+// Serve static files
+app.use(express.static(path.join(__dirname, '../public')));
 
-// Authentication middleware: Redirects unauthenticated users to login for protected routes
-function isAuthenticated(req: express.Request & { session: any }, res: express.Response, next: express.NextFunction) {
-  if (req.session.user) {
-    next();
+// Initialize services
+const dbService = new DatabaseService();
+const authService = new AuthService(dbService);
+const bookService = new BookService(dbService);
+
+// Routes
+app.get('/', (req, res) => {
+  if (req.session.userId) {
+    res.sendFile(path.join(__dirname, '../public/index.html'));
   } else {
-    res.redirect('/login');
-  }
-}
-
-// Root route: Handles listing books or searching (available to all users)
-app.get('/', async (req, res) => {
-  const query = req.query.query as string;
-  let type = req.query.type as 'title' | 'author';
-  if (!type) type = 'title'; // Default to title search
-  let books;
-  try {
-    if (query) {
-      books = await searchBooks(query, type);
-    } else {
-      books = await getBooks();
-    }
-    res.render('index', { books, user: req.session.user, query, type, error: null });
-  } catch (err) {
-    res.render('index', { books: [], user: req.session.user, query, type, error: 'Error loading books' });
+    res.sendFile(path.join(__dirname, '../public/login.html'));
   }
 });
 
-// Login page
-app.get('/login', (req, res) => {
-  res.render('login', { error: null });
-});
-
-// Handle login
-app.post('/login', async (req, res) => {
-  const { username, password } = req.body;
-  if (!username || !password) {
-    return res.render('login', { error: 'Missing username or password' });
-  }
-  try {
-    const user = await getUserByUsername(username);
-    if (user && await bcrypt.compare(password, user.password)) {
-      req.session.user = username;
-      res.redirect('/');
-    } else {
-      res.render('login', { error: 'Invalid credentials' });
-    }
-  } catch (err) {
-    res.render('login', { error: 'Error during login' });
-  }
-});
-
-// Register page
-app.get('/register', (req, res) => {
-  res.render('register', { error: null });
-});
-
-// Handle registration
+// Auth routes
 app.post('/register', async (req, res) => {
-  const { username, password } = req.body;
-  if (!username || !password) {
-    return res.render('register', { error: 'Missing username or password' });
-  }
   try {
-    const existingUser = await getUserByUsername(username);
-    if (existingUser) {
-      return res.render('register', { error: 'Username already taken' });
-    }
-    const hashedPassword = await bcrypt.hash(password, 10);
-    await addUser(username, hashedPassword);
-    req.session.user = username;
+    const { username, password } = req.body;
+    await authService.register(username, password);
     res.redirect('/');
-  } catch (err) {
-    res.render('register', { error: 'Error during registration' });
+  } catch (error) {
+    res.status(400).send(error.message);
   }
 });
 
-// Logout
-app.get('/logout', (req, res) => {
+app.post('/login', async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    const user = await authService.login(username, password);
+    req.session.userId = user.id;
+    res.redirect('/');
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
+app.post('/logout', (req, res) => {
   req.session.destroy(() => {
     res.redirect('/');
   });
 });
 
-// Add book (protected)
-app.post('/add', isAuthenticated, async (req, res) => {
-  const { title, author, year } = req.body;
-  const parsedYear = parseInt(year);
-  // Input validation
-  if (!title?.trim() || !author?.trim() || isNaN(parsedYear) || parsedYear < 1400 || parsedYear > currentYear) {
-    const books = await getBooks();
-    return res.render('index', { books, user: req.session.user, query: '', type: 'title', error: 'Invalid input: Title and author must be non-empty; year must be between 1400 and ' + currentYear });
-  }
+// Book routes
+app.get('/api/books', async (req, res) => {
+  if (!req.session.userId) return res.status(401).send('Unauthorized');
   try {
-    await addBook(title.trim(), author.trim(), parsedYear);
-    res.redirect('/');
-  } catch (err) {
-    const books = await getBooks();
-    res.render('index', { books, user: req.session.user, query: '', type: 'title', error: 'Error adding book (possible duplicate or DB issue)' });
+    const books = await bookService.getAllBooks();
+    res.json(books);
+  } catch (error) {
+    res.status(500).send(error.message);
   }
 });
 
-// Delete book (protected)
-app.post('/delete/:id', isAuthenticated, async (req, res) => {
-  const id = parseInt(req.params.id);
-  if (isNaN(id)) {
-    return res.redirect('/');
-  }
+app.post('/api/books', async (req, res) => {
+  if (!req.session.userId) return res.status(401).send('Unauthorized');
   try {
-    await deleteBook(id);
-    res.redirect('/');
-  } catch (err) {
-    const books = await getBooks();
-    res.render('index', { books, user: req.session.user, query: '', type: 'title', error: 'Error deleting book' });
+    const { title, author, year } = req.body;
+    const book = await bookService.addBook(title, author, year);
+    res.json(book);
+  } catch (error) {
+    res.status(400).send(error.message);
   }
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.delete('/api/books/:id', async (req, res) => {
+  if (!req.session.userId) return res.status(401).send('Unauthorized');
+  try {
+    await bookService.deleteBook(req.params.id);
+    res.sendStatus(204);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
+app.get('/api/books/search', async (req, res) => {
+  if (!req.session.userId) return res.status(401).send('Unauthorized');
+  try {
+    const { query, type } = req.query;
+    const books = await bookService.searchBooks(query as string, type as 'title' | 'author');
+    res.json(books);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
 });
