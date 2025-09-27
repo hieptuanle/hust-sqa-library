@@ -2,12 +2,12 @@
   "name": "@hust-sqa/claude-sonnet-4",
   "version": "1.0.0",
   "description": "Library management system implementation using Claude Sonnet 4",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js",
-    "dev": "node --watch index.js"
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [
     "library-management",
@@ -16,5 +16,25 @@
     "book-management"
   ],
   "author": "hieple",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7",
+    "sqlite": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^11.0.5",
+    "express-session": "^1.18.1",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/uuid": "^10.0.0",
+    "@types/express-session": "^1.18.1",
+    "@types/node": "^22.10.6",
+    "typescript": "^5.7.3",
+    "tsx": "^4.19.2"
+  }
 }
